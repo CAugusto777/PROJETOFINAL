@@ -1,0 +1,132 @@
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a img {
+    height: 60px;
+}
+
+/* Estilos do Menu */
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'WDXL Lubrifont TC', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.menu-principal a:hover {
+    color: #ccc;
+}
+
+/* Estilos da Seção Principal */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.carrosel {
+    flex: 2; /* O carrossel ocupa mais espaço que a div de eventos */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilos da div de Eventos (fixada à direita) */
+.eventos {
+    flex: 1; /* A div de eventos ocupa uma parte menor do espaço */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redeSocial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redeSocial img {
+    height: 30px;
+}
+
+.logoFinal img {
+    height: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redeSocial {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
