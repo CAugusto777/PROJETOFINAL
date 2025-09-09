@@ -1,0 +1,28 @@
+
+.meio {
+    display: grid; 
+    justify-content: center;
+    min-height: 100vh; 
+    gap: 20px; 
+  }
+
+  .titulo{
+    text-align: center;
+  }
+  
+  .comparar table {
+    border-collapse: collapse; 
+    width: auto; 
+  }
+  
+  .comparar th, .comparar td {
+    border: 1px solid #ccc; /* Adiciona uma borda sutil às células */
+    padding: 10px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o conteúdo das células */
+  }
+  
+  .comparar img {
+    max-width: 100px; /* Define um tamanho máximo para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
