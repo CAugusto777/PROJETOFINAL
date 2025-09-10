@@ -11,6 +11,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    margin-bottom: 100px; /* Espaço para o footer fixo */
 }
 
 /* Estilos do Header */
@@ -84,6 +85,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .redeSocial {

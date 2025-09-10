@@ -1,0 +1,83 @@
+/* Estilos específicos para a página da Porsche */
+
+.meioPorshe {
+    padding: 20px;
+    margin-bottom: 120px; /* Espaço para o footer fixo */
+    min-height: calc(100vh - 140px);
+}
+
+.meioPorshe > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-texto-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.imgporshe img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.textoporshe {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.carro-container {
+    width: 100%;
+    text-align: center;
+}
+
+.carro-container img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.carro-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsividade para a página da Porsche */
+@media (max-width: 768px) {
+    .logo-texto-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .textoporshe {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .imgporshe img {
+        max-width: 200px;
+    }
+    
+    .meioPorshe {
+        padding: 15px;
+    }
+}
+
