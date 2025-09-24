@@ -1,0 +1,226 @@
+/* Estilos específicos para a página de blindagem SBI */
+
+.blindagemSbi {
+    padding: 20px;
+    margin-bottom: 120px; /* Espaço para o footer fixo */
+    min-height: calc(100vh - 140px);
+}
+
+.blindagemSbi > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container para logo e texto lado a lado */
+.logo-texto-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.imgsbi img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.imgsbi img:hover {
+    transform: scale(1.05);
+}
+
+.textosbi {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Container para imagem do carro e mapa lado a lado */
+.imagem-mapa-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.carro-container {
+    flex: 1;
+    text-align: center;
+}
+
+.carro-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.carro-container img:hover {
+    transform: scale(1.02);
+}
+
+.mapa-container {
+    flex: 1;
+    text-align: center;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Container para informações de blindagem */
+.blindagem-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.blindagem-container h2 {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.blindagem-info {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blindagem-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.blindagem-item:hover {
+    transform: translateY(-5px);
+}
+
+.blindagem-item h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.blindagem-item p {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.blindagem-item .preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .imagem-mapa-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .blindagem-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-texto-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .textosbi {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .imgsbi img {
+        max-width: 200px;
+    }
+    
+    .blindagemSbi {
+        padding: 15px;
+    }
+    
+    .imagem-mapa-container {
+        gap: 20px;
+    }
+    
+    .mapa-container iframe {
+        height: 300px;
+    }
+    
+    .blindagem-container h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .blindagem-info {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .blindagem-item {
+        padding: 20px;
+    }
+    
+    .blindagem-item h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-texto-container {
+        gap: 15px;
+    }
+    
+    .textosbi {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .imgsbi img {
+        max-width: 150px;
+    }
+    
+    .mapa-container iframe {
+        height: 250px;
+    }
+}

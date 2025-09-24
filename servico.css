@@ -1,0 +1,172 @@
+/* Estilos específicos para a página de serviços */
+
+main {
+    padding: 40px 20px;
+    margin-bottom: 120px; /* Espaço para o footer fixo */
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    min-width: 280px;
+    max-width: 320px;
+}
+
+main > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+main > div > div a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+main > div > div img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main > div > div:hover img {
+    transform: scale(1.1);
+}
+
+main > div > div h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cores específicas para cada serviço */
+main > div > div:nth-child(1) {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    color: white;
+}
+
+main > div > div:nth-child(1) h3 {
+    color: white;
+}
+
+main > div > div:nth-child(2) {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    color: white;
+}
+
+main > div > div:nth-child(2) h3 {
+    color: white;
+}
+
+main > div > div:nth-child(3) {
+    background: linear-gradient(135deg, #117f97 0%, #0b08e0 100%);
+    color: white;
+}
+
+main > div > div:nth-child(3) h3 {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    main > div {
+        gap: 40px;
+    }
+    
+    main > div > div {
+        min-width: 250px;
+        max-width: 280px;
+        padding: 25px;
+    }
+    
+    main > div > div img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    main > div > div h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+    
+    main > div {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    main > div > div {
+        min-width: 220px;
+        max-width: 300px;
+        padding: 20px;
+    }
+    
+    main > div > div img {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    
+    main > div > div h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 10px;
+    }
+    
+    main > div > div {
+        min-width: 200px;
+        max-width: 280px;
+        padding: 15px;
+    }
+    
+    main > div > div img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    main > div > div h3 {
+        font-size: 16px;
+    }
+}
