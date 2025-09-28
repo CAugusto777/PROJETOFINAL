@@ -1,0 +1,171 @@
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap' );
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Removemos a margem do footer, pois o layout principal cuidará do espaço */
+}
+
+/* Estilos do Header */
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Garante que o header fique acima de outros elementos se necessário */
+    z-index: 10;
+}
+
+.logo a img {
+    height: 60px;
+}
+
+/* Estilos do Menu */
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'WDXL Lubrifont TC', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.menu-principal a:hover {
+    color: #ccc;
+}
+
+/* --- NOVOS ESTILOS DA SEÇÃO PRINCIPAL --- */
+main {
+    display: flex;
+    padding-top: 20px; /* Adiciona espaço abaixo do header */
+}
+
+/* Div de Eventos (agora fixa à esquerda) */
+.eventos {
+    width: 250px;       /* Largura fixa de 250px */
+    height: 700px;      /* Altura fixa de 700px */
+    flex-shrink: 0;     /* Impede que a div encolha */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 20px;  /* Espaço da borda da tela */
+    position: sticky;   /* Efeito "fixo" ao rolar */
+    top: 20px;          /* Distância do topo ao ficar fixo */
+}
+
+/* Conteúdo principal que contém o carrossel */
+.conteudo-principal {
+    flex-grow: 1; /* Ocupa todo o espaço restante */
+    padding: 0 20px; /* Espaçamento nas laterais */
+}
+
+/* Carrossel */
+.carrosel {
+    width: 70%; /* Ocupa 70% do espaço do seu container (.conteudo-principal) */
+    margin: 0 auto; /* Centraliza o carrossel no espaço disponível */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%; /* A imagem ocupa 100% da largura do carrossel */
+    height: auto; /* Altura se ajusta para manter a proporção */
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Botões do Carrossel */
+.carrosel .prev, .carrosel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.carrosel .prev {
+    left: 10px;
+}
+
+.carrosel .next {
+    right: 10px;
+}
+
+
+/* Estilos do Footer */
+footer {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px; /* Adiciona espaço acima do footer */
+    /* A posição não é mais fixa para não sobrepor o conteúdo */
+}
+
+.redeSocial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redeSocial img {
+    height: 30px;
+}
+
+.logoFinal img {
+    height: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .eventos {
+        position: static; /* Remove a posição fixa em telas pequenas */
+        width: 100%;      /* Ocupa a largura total */
+        height: auto;     /* Altura automática */
+        margin: 0 0 20px 0; /* Adiciona margem abaixo */
+    }
+
+    .carrosel {
+        width: 100%; /* Carrossel ocupa toda a largura */
+    }
+
+    footer {
+        position: static;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -47,35 +47,9 @@ header {
     color: #ccc;
 }
 
-/* Estilos da Seção Principal */
-main {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-}
 
-.conteudo-principal {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-}
 
-.carrosel {
-    flex: 2; /* O carrossel ocupa mais espaço que a div de eventos */
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
 
-/* Estilos da div de Eventos (fixada à direita) */
-.eventos {
-    flex: 1; /* A div de eventos ocupa uma parte menor do espaço */
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
 
 /* Estilos do Footer */
 footer {
