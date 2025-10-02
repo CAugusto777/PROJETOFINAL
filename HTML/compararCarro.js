@@ -16,7 +16,7 @@ const carrosData = {
         velocidadeFinal: "310 km/h",
         aceleracao: "3.0 segundos",
         cor: "Verde Mantis",
-        imagem: "/IMG/2021-lamborghini-huraca-n-sto-112-1628181687.jpg"
+        imagem: "/IMG/STOVerde Mantis.jpg"
     },
     3: {
         nome: "Porsche 911 Carrera T",
@@ -28,13 +28,13 @@ const carrosData = {
         imagem: "/IMG/Porsche 911 Carrera T parked in a courtyard.jpg"
     },
     4: {
-        nome: "Ferrari SF90 Stradale",
+        nome: "Ford Mustang GTD",
         ano: 2022,
-        valor: "R$ 4.800.000",
-        velocidadeFinal: "340 km/h",
+        valor: "R$ 2.300.000",
+        velocidadeFinal: "325 km/h",
         aceleracao: "2.5 segundos",
-        cor: "Laranja Papaya",
-        imagem: "/IMG/1034306-2048x1152.jpg"
+        cor: "Performance White",
+        imagem: "/IMG/Mustang-GTD-Spirit-of-America-2025_2.jpg"
     },
     5: {
         nome: "Audi R8 V10 Plus",
@@ -43,7 +43,7 @@ const carrosData = {
         velocidadeFinal: "330 km/h",
         aceleracao: "3.1 segundos",
         cor: "Cinza Nardo",
-        imagem: "/IMG/globalcarro.jpg"
+        imagem: "/IMG/2020-audi-r8.jpg"
     },
     6: {
         nome: "Lamborghini Aventador SVJ",
@@ -52,7 +52,7 @@ const carrosData = {
         velocidadeFinal: "350 km/h",
         aceleracao: "2.8 segundos",
         cor: "Verde Scandal",
-        imagem: "/IMG/lambo.png"
+        imagem: "/IMG/Verde Scandal.png"
     },
     7: {
         nome: "Porsche 911 Turbo S",
@@ -61,7 +61,7 @@ const carrosData = {
         velocidadeFinal: "330 km/h",
         aceleracao: "2.7 segundos",
         cor: "Azul Gentian",
-        imagem: "/IMG/porsheLogo.png"
+        imagem: "/IMG/porshe911-6104A1.jpg"
     },
     8: {
         nome: "Mercedes-Benz SLS AMG",
@@ -70,7 +70,7 @@ const carrosData = {
         velocidadeFinal: "317 km/h",
         aceleracao: "3.7 segundos",
         cor: "Prata Iridium",
-        imagem: "/IMG/2021-Mercedes-AMG-GT-Black-Series-009-2160-scaled.jpg"
+        imagem: "/IMG/mercedes-benz-sls-amg-black-series-.jpg"
     }
 };
 
