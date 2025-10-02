@@ -1,0 +1,106 @@
+/* Estilos específicos para a página da Porsche */
+
+.meioMercedes {
+    padding: 20px;
+    margin-bottom: 120px; /* Espaço para o footer fixo */
+    min-height: calc(100vh - 140px);
+}
+
+.meioMercedes > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-texto-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.imgMercedes img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.textoMercedes {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Novo container para imagem e mapa */
+.imagem-mapa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.carro-container, .mapMercedesSSA {
+    flex: 1; /* Faz com que ambos os elementos ocupem o espaço disponível igualmente */
+    width: 100%;
+}
+
+.carro-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.carro-container img:hover {
+    transform: scale(1.02);
+}
+
+.mapMercedesSSA iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px; /* Altura mínima para o mapa */
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .imagem-mapa-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-texto-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .textoMercedes {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .imgMercedes img {
+        max-width: 200px;
+    }
+    
+    .Mercedesrshe {
+        padding: 15px;
+    }
+}
