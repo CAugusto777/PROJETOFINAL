@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPARAR CARROS</title>
     <link rel="stylesheet" href="/CSS/BASE.css">
+    <link rel="stylesheet" href="/CSS/compararCarro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
@@ -33,7 +34,165 @@
     </header>
 
     <main>
-     
+        
+            <section class="comparar-section">
+                <h1>Comparar Carros</h1>
+                <p class="subtitle">Selecione 2 carros para comparar suas especificações</p>
+                
+                <div class="carros-grid">
+                    <!-- Linha 1 -->
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro1" class="carro-checkbox" data-carro="1">
+                            <label for="carro1"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/2021-Mercedes-AMG-GT-Black-Series-009-2160-scaled.jpg" alt="Mercedes AMG GT">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Mercedes AMG GT Black Series</h3>
+                            <p class="ano">Ano: 2021</p>
+                            <p class="valor">R$ 2.500.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro2" class="carro-checkbox" data-carro="2">
+                            <label for="carro2"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/2021-lamborghini-huraca-n-sto-112-1628181687.jpg" alt="Lamborghini Huracán STO">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Lamborghini Huracán STO</h3>
+                            <p class="ano">Ano: 2021</p>
+                            <p class="valor">R$ 3.200.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro3" class="carro-checkbox" data-carro="3">
+                            <label for="carro3"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/Porsche 911 Carrera T parked in a courtyard.jpg" alt="Porsche 911 Carrera T">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Porsche 911 Carrera T</h3>
+                            <p class="ano">Ano: 2023</p>
+                            <p class="valor">R$ 950.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro4" class="carro-checkbox" data-carro="4">
+                            <label for="carro4"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/1034306-2048x1152.jpg" alt="Carro Esportivo">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Ferrari SF90 Stradale</h3>
+                            <p class="ano">Ano: 2022</p>
+                            <p class="valor">R$ 4.800.000</p>
+                        </div>
+                    </div>
+    
+                    <!-- Linha 2 -->
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro5" class="carro-checkbox" data-carro="5">
+                            <label for="carro5"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/globalcarro.jpg" alt="Carro Global">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Audi R8 V10 Plus</h3>
+                            <p class="ano">Ano: 2020</p>
+                            <p class="valor">R$ 1.800.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro6" class="carro-checkbox" data-carro="6">
+                            <label for="carro6"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/lambo.png" alt="Lamborghini">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Lamborghini Aventador SVJ</h3>
+                            <p class="ano">Ano: 2019</p>
+                            <p class="valor">R$ 5.500.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro7" class="carro-checkbox" data-carro="7">
+                            <label for="carro7"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/porsheLogo.png" alt="Porsche">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Porsche 911 Turbo S</h3>
+                            <p class="ano">Ano: 2023</p>
+                            <p class="valor">R$ 1.650.000</p>
+                        </div>
+                    </div>
+    
+                    <div class="carro-card">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="carro8" class="carro-checkbox" data-carro="8">
+                            <label for="carro8"></label>
+                        </div>
+                        <div class="carro-imagem">
+                            <img src="/IMG/2021-Mercedes-AMG-GT-Black-Series-009-2160-scaled.jpg" alt="Mercedes">
+                        </div>
+                        <div class="carro-info">
+                            <h3>Mercedes-Benz SLS AMG</h3>
+                            <p class="ano">Ano: 2020</p>
+                            <p class="valor">R$ 2.200.000</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="comparar-btn-container">
+                    <button id="compararBtn" class="comparar-btn" disabled>
+                        Comparar Carros
+                    </button>
+                    <p class="info-text">Selecione exatamente 2 carros para comparar</p>
+                </div>
+            </section>
+    
+            <!-- Modal de Comparação -->
+            <div id="modalComparacao" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Comparação Detalhada</h2>
+                    
+                    <div class="comparacao-container">
+                        <div class="carro-comparacao" id="carroA">
+                            <!-- Conteúdo preenchido dinamicamente -->
+                        </div>
+                        
+                        <div class="vs-divider">
+                            <span>VS</span>
+                        </div>
+                        
+                        <div class="carro-comparacao" id="carroB">
+                            <!-- Conteúdo preenchido dinamicamente -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </main>
 
     <footer>
@@ -55,6 +214,6 @@
             </a>
         </div>
     </footer>
-
+    <script src="compararCarro.js"></script>
 </body>
 </html>

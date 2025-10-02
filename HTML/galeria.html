@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALERIA</title>
      <link rel="stylesheet" href="/CSS/BASE.css">
+     <link rel="stylesheet" href="/CSS/galeria.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
@@ -31,10 +32,64 @@
         </div>
     </header>
 
+  
     <main>
-      CRIAR CARROSEL DE FOTOS DOS CADASTRADOS
-    </main>
+        <section class="galeria-section">
+            <h1>Galeria de Fotos</h1>
+            
+            <!-- Carrossel de Fotos -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+                
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="/IMG/1034306-2048x1152.jpg" alt="Carro 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/IMG/2021-Mercedes-AMG-GT-Black-Series-009-2160-scaled.jpg" alt="Mercedes AMG GT">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/IMG/2021-lamborghini-huraca-n-sto-112-1628181687.jpg" alt="Lamborghini Huracán">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/IMG/Porsche 911 Carrera T parked in a courtyard.jpg" alt="Porsche 911 Carrera T">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/IMG/globalcarro.jpg" alt="Carro Global">
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
 
+            <!-- Área de Upload de Fotos -->
+            <div class="upload-section">
+                <h2>Envie suas Fotos</h2>
+                <p>Compartilhe suas fotos de carros conosco!</p>
+                
+                <div class="upload-container">
+                    <input type="file" id="fileInput" accept="image/*" multiple style="display: none;" onchange="handleFileSelect(event)">
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Selecionar Fotos
+                    </button>
+                    <div id="fileInfo" class="file-info"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="redeSocial">
             <p>Redes Sociais</p>
@@ -54,6 +109,6 @@
             </a>
         </div>
     </footer>
-
+    <script src="galeria.js"></script>
 </body>
 </html>
